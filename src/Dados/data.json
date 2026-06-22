@@ -3,18 +3,18 @@
         "id": 1,
         "desc": "Minos Prime",
         "imagem": "../../public/minos-prime.gif",
-        "sal": 10200.55
+        "sal": 7000
     },
     {
         "id": 2,
         "desc": "Sisyphus Prime",
         "imagem": "../../public/ultrakill-sisyphus-prime.gif",
-        "sal": 45000.90
+        "sal": 10000
     },
     {
         "id": 3,
         "desc": "V1",
         "imagem": "../../public/as.gif",
-        "sal": 500.00
+        "sal": 80000
     }
 ]
