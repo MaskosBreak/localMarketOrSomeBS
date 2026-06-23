@@ -35,11 +35,34 @@ function gerar(){
     const totalElement = document.getElementById("total")
     const listaClone = listaElement.cloneNode(true)
     $(listaClone).find("button").remove()
-    const listaHTML = listaClone.innerHTML
-    const totalHTML = totalElement.innerHTML
+    const listaHtml = listaClone.innerHTML
+    const totalHtml = totalElement.innerHTML
     const conteudoHTML = `
     <html>
         <head>
             <meta charset="UTF-8">
+        </head>
+        <body>
+            <h1>Pedido Confirmado</h1>
+            <h3>Agradecemos sua compra e sua preferência.</h3>
+            <br>
+            ${listaHtml}
+            <br>
+            <br>
+            ${totalHtml}
+        </body>
+    </html>
+
     `
+    const blob = new Blob([conteudoHTML], {type: "aplication/msword"} )
+    const link = document.createElement("pedido0").style.display = "block"
+
+    link.href = URL.createObjectURL(blob)
+    link.download = "pedido.doc"
+    link.click()
+    document.getElementById("pedido").style.display = "block"
+}
+
+function sucessClose(){
+    document.getElementById("pedido").style.display = "none"
 }

@@ -1,20 +1,27 @@
 [
     {
         "id": 1,
-        "desc": "Minos Prime",
-        "imagem": "../../public/minos-prime.gif",
+        "desc": "V1",
+        "imagem": "../../public/acas.gif",
         "sal": 7000
     },
     {
         "id": 2,
-        "desc": "Sisyphus Prime",
-        "imagem": "../../public/ultrakill-sisyphus-prime.gif",
+        "desc": "V2",
+        "imagem": "../../public/idk.gif",
         "sal": 10000
     },
     {
         "id": 3,
-        "desc": "V1",
-        "imagem": "../../public/as.gif",
+        "desc": "Gabriel",
+        "imagem": "../../public/GABRIELPlush.gif",
+        "sal": 80000
+    },
+    {
+        "id": 4,
+        "desc": "Wall Flag",
+        "imagem": "../../public/Wall_Flag1.jpg",
         "sal": 80000
     }
+    
 ]
