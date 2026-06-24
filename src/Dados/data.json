@@ -3,25 +3,25 @@
         "id": 1,
         "desc": "V1",
         "imagem": "../../public/acas.gif",
-        "sal": 70
+        "preco": 70
     },
     {
         "id": 2,
         "desc": "V2",
         "imagem": "../../public/idk.gif",
-        "sal": 100
+        "preco": 100
     },
     {
         "id": 3,
         "desc": "Gabriel",
         "imagem": "../../public/GABRIELPlush.gif",
-        "sal": 800
+        "preco": 800
     },
     {
         "id": 4,
         "desc": "Wall Flag",
         "imagem": "../../public/Wall_Flag1.jpg",
-        "sal": 36
+        "preco": 36
     }
     
 ]

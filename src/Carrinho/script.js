@@ -9,7 +9,8 @@ function exibirCarrinho(){
     let totalPreco = 0
 
     $.each(carrinho, function(index, item){
-        const listItem = $("<li>").text(`${item.desc} - Preço: $${item.preco.toFixed(2)}`)
+        const preco = item.preco ? parseFloat(item.preco).toFixed(2) : "0.00"
+        const listItem = $("<li>").text(`${item.desc} - Preço: $${preco}`)
 
         const removeButton = $("<button>").text("❌").css("margin-left", "10px").click(function(){
 
@@ -19,11 +20,11 @@ function exibirCarrinho(){
         listItem.append(removeButton)
         listaElement.append(listItem)
 
-        totalPreco += item.preco
+        totalPreco += parseFloat(item.preco) || 0
     })
     totalElement.text(`Total: $${totalPreco.toFixed(2)}`)
     }
-    function removerIem(index){
+    function removerItem(index){
         carrinho.splice(index, 1)
         localStorage.setItem("carrinho", JSON.stringify(carrinho))
         exibirCarrinho()
@@ -54,12 +55,15 @@ function gerar(){
     </html>
 
     `
-    const blob = new Blob([conteudoHTML], {type: "aplication/msword"} )
-    const link = document.createElement("pedido0").style.display = "block"
+    const blob = new Blob([conteudoHTML], {type: "application/msword"} )
+    const link = document.createElement("a")
+    link.style.display = "none"
 
     link.href = URL.createObjectURL(blob)
     link.download = "pedido.doc"
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
     document.getElementById("pedido").style.display = "block"
 }
 
