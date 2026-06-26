@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 body{
-
     font-family: "Inter", sans-serif !important;
     width: 100vw;
     height: auto;
     overflow-x: hidden;
-    padding: 20px;
+    padding-top: 80px;
 }
 .wrap{
     display: flex;
@@ -25,4 +24,45 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+#simbcar{
+    cursor: pointer;
+    margin-right: 20px;
+    width: 60px;
+}
+#logo{
+    margin: 10px;
+}
+nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.nav:hover{
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+}
+.rest{
+    padding-top: 100px;
+}
+.logged{
+    font-size: 20px;
+}
+.card{
+    width: 18rem !important;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.card-img-top{
+    height: 300px;
+    object-fit: cover;
 }

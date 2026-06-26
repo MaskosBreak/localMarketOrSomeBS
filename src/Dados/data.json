@@ -22,6 +22,11 @@
         "desc": "Wall Flag",
         "imagem": "../../public/Wall_Flag1.jpg",
         "preco": 36
+    },
+    {
+        "id": 5,
+        "desc": "Wall Flag",
+        "imagem": "../../public/Wall_Flag1.jpg",
+        "preco": 36
     }
-    
 ]
